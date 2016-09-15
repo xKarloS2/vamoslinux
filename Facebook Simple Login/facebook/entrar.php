@@ -12,7 +12,7 @@ $usuario = $facebook->getUser();
 if ($usuario) {
   try {
             $user_profile = $facebook->api('/me');
-  	    $fbid = $user_profile['id'];                 //Consigo la Facebook ID
+  	    $fbid = $user_profile['id'];                 //Consigo ID Facebook 
  	    $fbusuario = $user_profile['username'];  // Consigo el nombre de usuario
  	    $fbnombre = $user_profile['name']; // Consigo el nombre completo
 	    $femail = $user_profile['email'];    // Consigo el correo
